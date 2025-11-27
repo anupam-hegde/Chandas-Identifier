@@ -11,7 +11,8 @@ try:
     from PIL import Image
     import pytesseract
     # Tesseract Path
-    pytesseract.pytesseract.tesseract_cmd = r"D:\tessaract\tesseract.exe"
+    if os.name == 'nt':
+        pytesseract.pytesseract.tesseract_cmd = r"D:\tessaract\tesseract.exe"
 except ImportError:
     print("WARNING: 'pytesseract' or 'Pillow' not installed. OCR will not work.")
 
@@ -275,4 +276,5 @@ def save_result():
 
 if __name__ == '__main__':
     print("SUCCESS! Server is running on http://127.0.0.1:5000")
+
     app.run(debug=True, port=5000)
