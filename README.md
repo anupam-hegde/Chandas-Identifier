@@ -2,7 +2,7 @@
 
 An AI-powered tool to analyze and identify the meter (Chandas) of Kannada poems. It supports text input and image scanning (OCR) to detect popular meters like **Kanda Padya**, **Shatpadi**, and various **Vruttas** (Utpalamala, Champakamala, etc.).
 
-*(Replace with actual screenshot if available)*
+
 
 ## **🚀 Features**
 
